@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search Component should render 1`] = `
+<div
+  className="search-container"
+>
+  <h1>
+    Search 
+    <b>
+      Flickr!
+    </b>
+  </h1>
+  <input
+    className="form-control search-text"
+    onChange={[MockFunction]}
+    placeholder="Search using image tags..."
+    type="text"
+  />
+  <span
+    className="input-group-btn"
+  >
+    <button
+      className="btn btn-primary search-btn"
+      onClick={[MockFunction]}
+      type="submit"
+    >
+      Go!
+    </button>
+  </span>
+</div>
+`;

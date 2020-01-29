@@ -1,0 +1,10 @@
+.spinner-loading {
+  position: absolute;
+  margin: 0 auto;
+  top: 20%;
+  left: 45%;
+}
+
+.text-tag {
+  color: #456dc4;
+}
