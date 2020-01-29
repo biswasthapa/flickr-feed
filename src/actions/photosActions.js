@@ -5,7 +5,7 @@ import {
   FETCH_PICTURES_SUCCESS,
   FETCH_PICTURES_FAILURE
 } from "../constants";
-import flickrUtils from "../utils/flickrUtils";
+import apiRequests from "../apiRequests/flickr";
 
 export const fetchPicturesStart = tags => ({
   type: FETCH_PICTURES_START,
@@ -25,7 +25,7 @@ export function fetchPictures(tags) {
   return async dispatch => {
     dispatch(fetchPicturesStart(tags));
     try {
-      await flickrUtils
+      await apiRequests
         .getFlickrPictures(tags)
         .then(function(response) {
           return response.json();

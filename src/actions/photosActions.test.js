@@ -9,9 +9,9 @@ import {
   FETCH_PICTURES_FAILURE
 } from "../constants";
 
-import flickrUtils from "../utils/flickrUtils";
+import apiRequests from "../apiRequests/flickr";
 
-jest.mock("../utils/flickrUtils");
+jest.mock("../apiRequests/flickr");
 
 const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);
@@ -40,7 +40,7 @@ describe("photoActions", () => {
         }
       ];
 
-      flickrUtils.getFlickrPictures.mockImplementation(() => {
+      apiRequests.getFlickrPictures.mockImplementation(() => {
         return Promise.resolve({
           status: 200,
           json: () => {
@@ -65,7 +65,7 @@ describe("photoActions", () => {
       ];
       const store = createStore();
 
-      flickrUtils.getFlickrPictures.mockImplementation(() => {
+      apiRequests.getFlickrPictures.mockImplementation(() => {
         return Promise.resolve({
           status: 500,
           json: () => {
