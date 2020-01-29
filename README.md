@@ -1,68 +1,40 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project consumes the Flickr Public Feed Api and displays the returned photos with their basic information in a card layout. The documentation for the api can be found [here](https://www.flickr.com/services/feeds/docs/photos_public/). The project is hosted at https://flickr-public-feed-biswas.herokuapp.com/
 
-## Available Scripts
+Few essentials to download and run this project are given below: 
 
-In the project directory, you can run:
+## Install Node.js
 
-### `yarn start`
+You will need to install Node.js to run the project. The Node.js installations instructions can be found [here]( https://nodejs.org/en/download/package-manager/)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+You should be able to run the following commands after installing
+  $ node --version
+  $ npm --version
+  
+## Install yarn
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Make sure yarn is installed as well. You can find the instructions [here](https://legacy.yarnpkg.com/en/docs/install/)
+  
+## Clone the project
 
-### `yarn test`
+  $ git clone https://github.com/biswasthapa/flickr-feed.git
+  
+## Configuration
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The configuration files for respective environments can be found at config/ directory
 
-### `yarn build`
+## Install Dependencies and run
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+You can install the dependencies by running the following command
+  $ yarn install
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Run the server with the following
+  $ yarn start
+  
+The app can be accessed locally by navigating http://localhost:3000 in your browser
+  
+## Running the tests
+  
+Use the following command to run the tests
+  
+  $ yarn test
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
