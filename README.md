@@ -1,4 +1,4 @@
-This project consumes the Flickr Public Feed Api and displays the returned photos with their basic information in a card layout. The documentation for the api can be found [here](https://www.flickr.com/services/feeds/docs/photos_public/). The project is hosted at https://flickr-public-feed-biswas.herokuapp.com/
+This is a project built with ReactJS which consumes the Flickr Public Feed Api and displays the returned photos with their basic information in a card layout. The documentation for the api can be found [here](https://www.flickr.com/services/feeds/docs/photos_public/). The project is hosted at https://flickr-public-feed-biswas.herokuapp.com/
 
 Few essentials to download and run this project are given below: 
 
